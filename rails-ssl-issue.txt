@@ -1,0 +1,15 @@
+gem sources -r https://rubygems.org/ - to temporarily remove secure connection
+
+gem sources -a http://rubygems.org/ - add insecure connection
+
+gem update --system - now we're able to update rubygems without SSL
+
+after updating rubygems do vice versa
+
+gem sources -r http://rubygems.org/ - to remove insecure connection
+
+gem sources -a https://rubygems.org/ - add secure connection
+
+Now you're able to update gems using secure connection.
+
+gem update
