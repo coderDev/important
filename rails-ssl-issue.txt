@@ -13,3 +13,7 @@ gem sources -a https://rubygems.org/ - add secure connection
 Now you're able to update gems using secure connection.
 
 gem update
+
+===========================================================
+
+http://code.tutsplus.com/tutorials/the-intro-to-rails-screencast-i-wish-i-had--net-22191
