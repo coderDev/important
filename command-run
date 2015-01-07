@@ -1,0 +1,26 @@
+drush make '/var/www/common_make/common.make'
+
+Connect to Mysql commmand:-
+
+mysql -u username -p 
+
+
+Create new database 
+
+CREATE DATABASE yourdatabasename;
+
+
+connect to database and install drupal 
+
+drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:password@localhost/dhanraj
+
+export database using command :- 
+
+mysqldump -u root -p dhanraj > backup.sql 
+
+
+import database using command :- 
+
+mysql -u root -p custom < backup.sql
+
+
