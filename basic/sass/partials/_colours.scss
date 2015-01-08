@@ -1,0 +1,33 @@
+// Named colours (only used by this brand)
+$purple-dark: #2d1b4e;
+$almost-black: #1a1a1a;
+$grey-darkest: #2b2c2f;
+$grey-dark: #36373b;
+$grey-medium: #61666e;
+$grey-medium-off: #7a818e;
+$grey-lightish: #b6b9c0;
+$grey-light: #e0e2e6;
+$grey-lighter: #edeff2;
+$orange-dark: #ea7200;
+$orange-light: #ff7d00;
+$teal: #00a99f;
+
+// Variables used by domino
+$table-border: $grey-medium;
+$table-background-header: #fff;
+$table-background: $grey-light;
+$table-background-alt: $grey-darkest;
+$tab-border: $grey-medium;
+$box-border: $grey-medium;
+$form-error: $orange-dark;
+$form-field-border: $grey-dark;
+$form-field-note: $grey-light;
+$form-field-error-background: $grey-light;
+$copy: $grey-medium;
+$user-picture-background: #fff;
+$user-picture-border: $grey-medium;
+
+// Variables only used by this brand
+$table-td-even: $grey-light;
+$table-td-odd: $grey-lighter;
+$table-top-border: $grey-lightish;

@@ -1,0 +1,35 @@
+name = dots
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+;http://www.code.binarybrand.com/index.php?title=How_to_theme_with_Omega_4#Setting_up_the_grid_and_gutters
+; ========================================
+; Stylesheets
+; ========================================
+;stylesheets[all][] = css/dots.normalize.css
+;stylesheets[all][] = css/dots.hacks.css
+;stylesheets[all][] = css/dots.styles.css
+;stylesheets[all][] = css/dots.no-query.css
+
+stylesheets[all][] = css/main.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/dots.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
