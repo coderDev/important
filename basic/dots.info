@@ -6,6 +6,7 @@ engine = phptemplate
 core = 7.x
 
 ;http://www.code.binarybrand.com/index.php?title=How_to_theme_with_Omega_4#Setting_up_the_grid_and_gutters
+;https://github.com/at-import/Singularity/wiki/Creating-Grids
 ; ========================================
 ; Stylesheets
 ; ========================================
