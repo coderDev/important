@@ -1,0 +1,54 @@
+// code for creating new node
+$path = './sites/default/files/test.jpg';
+$filetitle = 'test';
+$filename = 'test.jpg';
+
+$node = new StdClass();
+
+$file_temp = file_get_contents($path);
+$file_temp = file_save_data($file_temp, 'public://' . $filename, FILE_EXISTS_RENAME);
+
+$node->title = $filetitle;
+$node->uid = 1;
+$node->status = 1;
+$node->type = '[content_type]';
+$node->language = 'und';
+$node->field_images = array(
+    'und' => array(
+        0 => array(
+            'fid' => $file_temp->fid,
+            'filename' => $file_temp->filename,
+            'filemime' => $file_temp->filemime,
+            'uid' => 1,
+            'display' => 1,
+            'uri' => $file_temp->uri,
+            'status' => 1
+        )
+    )
+);
+$node->field_taxonomy = array('und' => array(
+    0 => array(
+        'tid' => 76
+    )
+));
+node_save($node);
+
+
+
+//code for updating node
+// IMPORTANT!  If you don't do this, your file gets deleted.  Fun!
+file_usage_add($file, "MODULENAME", "node", $user->uid);
+
+// Save this file information into the node!   
+$node = node_load($nid);
+
+  $node->field_upload_image['und'][0] = array(
+    'fid' => $file->fid,
+    'filename' => $file->filename,
+    'filemime' => $file->filemime,
+    'uid' => 1,
+    'uri' => $file->uri,
+    'status' => 1,
+  );
+  
+  node_save($node);
